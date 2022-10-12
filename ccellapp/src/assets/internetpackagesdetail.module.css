@@ -1,0 +1,260 @@
+.pageHeader {
+    @apply
+    container mx-auto
+    py-10
+}
+.pageHeader > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-[32px] leading-10
+}
+.pageContentContainer {
+    @apply
+    container mx-auto
+    flex items-start justify-between gap-20
+}
+.bundleCard {
+    @apply
+    bg-white
+    border border-[#DDDFE7]
+    rounded-[13px]
+    flex  gap-12 flex-wrap
+    max-w-[720px]
+}
+.bundleCardHeader {
+@apply
+font-Ubuntu
+font-bold
+text-2xl
+leading-[54px]
+text-[#082546]
+pl-4
+pt-5
+}
+.bundlePrice {
+@apply
+bg-[#FFD600]
+rounded-[9px]
+shadow-[0_3px_6px_0px_rgba(195,202,224,0.54)]
+-ml-[10px]
+mb-8
+w-[223px]
+h-[50px]
+}
+.bundlePrice > p {
+@apply
+font-Ubuntu
+font-medium
+text-sm
+text-[#082546]
+pl-[22px]
+pt-[3px]
+}
+.bundleInfoCover {
+@apply
+pl-4
+pr-7
+}
+.bundleInfo {
+@apply
+flex
+pb-5
+}
+.bundleInfoText {
+@apply
+ml-4
+}
+.bundleInfoText > h3 {
+@apply
+font-Ubuntu
+font-medium
+text-base
+text-[#082546]
+}
+.bundleInfoText > p {
+@apply
+font-Ubuntu
+font-normal
+text-sm
+text-[#76797C]
+}
+.bundleInfoBtn {
+@apply
+flex
+justify-center
+items-center
+pb-6
+}
+.bundleInfoBtn > a {
+@apply
+flex
+justify-center
+font-Ubuntu
+font-medium
+text-base
+leading-[20px]
+text-[#1559A6]
+py-4
+px-20
+border border-[#DDDFE7]
+rounded-[13px]
+}
+.bundleFormCover {
+@apply
+px-8
+}
+.bundleFormTextHeader {
+@apply
+font-Ubuntu font-medium
+text-base text-[#082546] leading-6
+pt-5
+}
+.bundleFormText {
+    @apply
+    font-Ubuntu font-normal
+    text-sm leading-[54px] 
+    text-[#76797C]
+}
+.bundleFormInput {
+    @apply
+    flex flex-col gap-4
+}
+.bundleFormInput > label > input {
+    @apply
+    border border-[#DDDFE7]
+    rounded-[9px]
+    w-full pl-6
+    h-12
+}
+.bundleFormInput > label > p {
+    @apply
+    font-Ubuntu font-normal
+    text-sm leading-5
+    text-[#76797C]
+    mb-2
+}
+.bundleFormInputCheckbox {
+    @apply
+    flex items-center
+}
+.bundleFormInputCheckbox > input {
+    @apply
+    rounded-[7px]
+    w-5 h-5 
+    mr-1
+    appearance-none bg-white
+    border border-[#76797C]
+    checked:bg-[#1559A6]
+    checked:border-[#1559A6]
+    outline-none
+    cursor-pointer
+    text-white
+    text-center leading-[100%]
+    checked:before:content-["✓"]
+}
+.bundleFormInputCheckbox > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-[14px] leading-6
+}
+.bundleFormButton {
+    @apply
+    mt-[30px] mb-10
+}
+.bundleFormButton > a {
+    @apply
+    py-4 px-20
+    bg-[#1559A6]
+    text-white text-base
+    font-Ubuntu font-medium
+    rounded-[9px]
+}
+.pageContentMenu  {
+    @apply
+    rounded-xl
+    shadow-[0_10px_45px_0px_rgba(71,59,240,0.10)]
+    p-6 
+    h-full
+    bg-white
+    md:hidden sm:hidden
+}
+.pageContentMenu > div {
+    @apply
+    max-w-[255px]
+    w-[200px]
+    pb-2
+}
+.pageContentMenu > div > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#76797C] text-base
+}
+.accordionContainer {
+    @apply
+    container mx-auto
+    mt-10
+}
+.accordionItem {
+    @apply
+    max-w-[730px]
+    p-8 bg-white
+    border border-[#DDDFE7]
+    rounded-[13px]
+    focus:border-[#1559A6]
+    mt-12
+}
+.accordionHeader {
+    @apply
+    flex justify-between
+}
+.accordionHeader > div > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[22px] leading-8
+    text-[#082546]
+}
+.accordionText {
+    @apply
+    hidden
+    mt-6
+    border-t border-[#DDDFE7]  
+}
+.accordionText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-sm text-[#082546]
+    pt-6 max-w-[666px]
+}
+.mobileMenu {
+    @apply
+    hidden
+    md:block sm:block
+    container mx-auto
+  }
+  .mobileMenuItem {
+    @apply
+    p-4
+    rounded-xl
+    font-Ubuntu font-medium
+    bg-white
+    text-base text-[#76797C]
+    max-w-[174px]
+    hover:text-[#123075]
+    hover:shadow-[0_6px_20px_0px_rgba(21,89,166,0.20)]
+    my-8 mx-1 text-center
+  }
+  .mebileSubMenu {
+    @apply
+    font-Ubuntu font-normal
+    
+    text-[#76797C]
+    text-base
+    container mx-auto
+    flex flex-wrap gap-3
+  }
+  .mebileSubMenu > a {
+    @apply
+    hover:font-medium
+    hover:text-[#123075]
+  }
+  

@@ -1,0 +1,292 @@
+.pageContent {
+    @apply
+    container mx-auto
+}
+.personalInfo > div {
+    @apply
+    flex md:flex-wrap-reverse sm:flex-wrap-reverse
+    mt-20 mb-10
+    md:mt-10 sm:mt-10
+    md:gap-10 sm:gap-10
+}
+.personalInfo > div > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[32px] leading-10 text-[#082546]
+    pl-7
+}
+.contentIcon {
+    @apply
+    bg-[#262D33]
+    w-10 h-10 rounded-[50%]
+    text-white text-2xl
+    flex justify-center items-center
+}
+.personalContent {
+    @apply
+    flex gap-[125px] flex-wrap
+    border-b border-b-[#DDDFE7]
+    pb-[72px]
+}
+.personelForm {
+    @apply
+    ml-[70px]
+    md:ml-0 sm:ml-0
+}
+.personelForm > label  {
+    @apply
+    block
+    w-[350px]
+    mb-5
+}
+.personelForm > label > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm 
+    mb-[10px]
+}
+.personelForm > label > input {
+    @apply
+    w-full h-[50px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+}
+.phoneInput  {
+    @apply
+    relative
+}
+.phoneInput > input {
+    @apply
+    w-full h-[50px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+    pl-20
+}
+.phoneInputOptions {
+    @apply
+    absolute
+    top-0 left-5 leading-[50px]
+}
+.phoneInputOptions > select {
+    @apply
+    pr-2
+    font-Ubuntu font-normal
+    text-[#76797C] text-base
+    border-r border-[#DDDFE7]
+}
+.personelFormbtn {
+    @apply
+    mt-10
+}
+.personelFormbtn > a {
+    @apply
+    font-Ubuntu font-medium
+    text-base text-white
+    bg-[#1559A6] p-4
+    flex justify-center items-center
+    w-[250px] rounded-[9px]
+}
+.buyBox {
+    @apply
+    w-[350px] h-[266px]
+    bg-[url('../assets/img/buyboxbg.svg')]
+    bg-no-repeat
+    border border-[#DDDFE7] rounded-[13px]
+    px-4 py-7
+    flex flex-col justify-between 
+}
+.buyBox > div {
+    @apply
+    flex justify-between
+}
+.buyBoxItem > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-base
+}
+.buyBoxItem > p {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-base
+}
+.buyBoxFinalHeader {
+    @apply
+    font-Ubuntu font-bold
+    text-[#082546] text-[26px]
+}
+.buyBoxFinalPrice {
+    @apply
+    font-Ubuntu font-medium
+    text-[31px] text-[#082546]
+}
+.buyBoxFinalPrice > span {
+    @apply
+    text-[20px]
+}
+.buyBoxFinalPriceDesc {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-base
+}
+.addressContent {
+    @apply
+    flex gap-[125px] flex-wrap
+    border-b border-b-[#DDDFE7]
+    pb-[72px]
+}
+.addressFormItem {
+    @apply
+    flex gap-4
+}
+.addressFormItem > label  {
+    @apply
+    mb-5
+}
+.addressFormItem > label > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm
+    pb-2
+}
+.addressFormItem > label > select {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-base
+    px-2 py-4 
+    border border-[#DDDFE7] rounded-[9px]
+    w-[167px] h-[50px]
+    outline-none focus:border-[#1559A6]
+}
+.addressFormItem > label > textarea {
+    @apply
+    border border-[#DDDFE7] rounded-[9px]
+    w-[350px] min-h-[100px] 
+    px-2 py-3 outline-none
+    focus:border-[#1559A6]
+}
+.addresFromErrorState > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#FF3838] text-[14px] leading-6
+    my-3
+}
+.creditCardContent {
+    @apply
+    flex gap-[125px] flex-wrap
+    border-b border-b-[#DDDFE7]
+    pb-[72px]
+    md:flex-wrap-reverse sm:flex-wrap-reverse
+    ml-[70px] md:ml-0 sm:ml-0
+}
+.creditCardForm {
+    @apply
+    max-w-[350px]
+}
+.addressForm {
+    @apply
+    ml-[70px] md:ml-0 sm:ml-0
+}
+.creditCardForm > label {
+    @apply
+    py-2 block
+}
+.creditCardForm > label > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm
+    my-1
+}
+.creditCardForm > label > input {
+    @apply
+    w-full h-[50px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+}
+.cvv > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm
+    my-1
+}
+.cvv > input {
+    @apply
+    w-full h-[50px] max-w-[80px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+}
+.cardname > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm
+    my-1
+}
+.cardname > input {
+    @apply
+    w-full h-[50px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+}
+.month > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm
+    my-1
+}
+.month > input {
+    @apply
+    w-full h-[50px] max-w-[80px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+}
+.year > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#76797C] text-sm
+    my-1
+}
+.year > input {
+    @apply
+    w-full h-[50px] max-w-[80px]
+    rounded-[9px] border border-[#DDDFE7]
+    outline-none
+    focus:border-[#1559A6]
+    px-2 py-3
+    text-base text-[#082546]
+    font-Ubuntu font-normal
+}
+.soldBtn {
+    @apply
+    mt-10
+}
+.soldBtn > a {
+    @apply
+    font-Ubuntu font-medium
+    text-base text-white
+    bg-[#1559A6] p-4
+    flex justify-center items-center
+    w-[250px] rounded-[9px]
+}

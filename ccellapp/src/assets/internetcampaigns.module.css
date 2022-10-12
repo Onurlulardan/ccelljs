@@ -1,0 +1,103 @@
+.campainsContainer {
+    @apply
+    container mx-auto
+    mt-10
+}
+.campainsHeader {
+    @apply
+    font-Ubuntu font-normal
+    text-[32px] leading-10 text-[#082546]
+}
+.campainsContent {
+    @apply
+    mt-10
+    flex flex-wrap gap-[30px]
+    sm:justify-center
+
+}
+
+.bundleCard {
+    @apply
+    bg-white
+    border border-[#DDDFE7]
+    rounded-[13px]
+    max-w-[255px]
+}
+.bundleCard > h1 {
+@apply
+font-Ubuntu
+font-bold
+text-2xl
+leading-[54px]
+text-[#082546]
+pl-4
+pt-5
+}
+.bundlePrice {
+@apply
+bg-[#FFD600]
+rounded-[9px]
+shadow-[0_3px_6px_0px_rgba(195,202,224,0.54)]
+-ml-[10px]
+mb-8
+w-[223px]
+h-[50px]
+}
+.bundlePrice > p {
+@apply
+font-Ubuntu
+font-medium
+text-sm
+text-[#082546]
+pl-[22px]
+pt-[3px]
+}
+.bundleInfoCover {
+@apply
+pl-4
+pr-7
+}
+.bundleInfo {
+@apply
+flex
+pb-5
+}
+.bundleInfoText {
+@apply
+ml-4
+}
+.bundleInfoText > h3 {
+@apply
+font-Ubuntu
+font-medium
+text-base
+text-[#082546]
+}
+.bundleInfoText > p {
+@apply
+font-Ubuntu
+font-normal
+text-sm
+text-[#76797C]
+}
+.bundleInfoBtn {
+@apply
+flex
+justify-center
+items-center
+pb-6
+}
+.bundleInfoBtn > a {
+@apply
+flex
+justify-center
+font-Ubuntu
+font-medium
+text-base
+leading-[20px]
+text-[#1559A6]
+py-4
+px-20
+border border-[#DDDFE7]
+rounded-[13px]
+}

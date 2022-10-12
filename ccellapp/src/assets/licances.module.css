@@ -1,0 +1,89 @@
+.pageHeader {
+    @apply
+    container mx-auto
+    my-10
+}
+.pageHeader > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[32px] leading-10
+    text-[#082546]
+}
+.pageContentCover {
+    @apply
+    container mx-auto
+    flex flex-wrap gap-[125px]
+}
+.pageContent {
+    @apply
+    max-w-[730px]
+}
+.pageContent > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-base
+}
+.pageContentMenu  {
+    @apply
+    rounded-xl
+    shadow-[0_10px_45px_0px_rgba(71,59,240,0.10)]
+    p-6 
+    h-full
+    bg-white
+    md:hidden sm:hidden
+}
+.pageContentMenu > div {
+    @apply
+    max-w-[255px]
+    w-[200px]
+    pb-2
+}
+.pageContentMenu > div > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#76797C] text-base
+}
+.licancesCover {
+    @apply
+    flex gap-[30px] flex-wrap
+    mt-9 min-h-[500px]
+    sm:min-h-[300px]
+}
+.licance {
+    @apply
+    bg-white
+    rounded-xl
+    shadow-[0_6px_20px_0px_rgba(21,89,166,0.20)]
+    max-w-[160px] max-h-[235px]
+    flex justify-center items-center
+}
+.licanceImage {
+    @apply
+    max-w-[156px] max-h-[220px]
+    py-2
+}
+.mobileMenu {
+    @apply
+    hidden sm:block md:block
+}
+.mobileMenuItem {
+    @apply
+    p-4
+    rounded-xl
+    font-Ubuntu font-medium
+    bg-white
+    text-base text-[#76797C]
+    max-w-[174px]
+    hover:text-[#123075]
+    hover:shadow-[0_6px_20px_0px_rgba(21,89,166,0.20)]
+    my-8 mx-1 text-center
+  }
+  .mebileSubMenu {
+    @apply
+    font-Ubuntu font-normal
+    
+    text-[#76797C]
+    text-base
+    container mx-auto
+    flex flex-wrap gap-3
+  }

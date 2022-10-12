@@ -1,0 +1,105 @@
+.footerContainer {
+    @apply
+    mt-[120px]
+    bg-[#0257AB]
+}
+.footerContainer > footer {
+    @apply
+    relative
+}
+.footerHeader {
+    @apply
+    absolute
+    top-[-55px]
+    left-2/4
+    -translate-x-2/4
+    container mx-auto
+    bg-white
+    bg-[url('../../assets/img/footerbg.svg')]
+    bg-left-bottom bg-no-repeat
+    shadow-[0_10px_30px_0px_rgba(21,89,166,0.40)]
+    rounded-xl
+    px-9 py-7
+    flex justify-between items-center flex-wrap
+    md:flex-col sm:flex-col
+    md:gap-8 sm:gap-8
+    md:w-3/4 sm:w-3/4
+    md:top-[-120px] sm:top-[-120px]
+}
+.footerHeaderItem {
+    @apply
+    flex items-start
+}
+.footerHeaderItem > i {
+    @apply
+    text-4xl text-[#1559A6] 
+    pr-1
+}
+.footerHeaderText > a {
+    @apply
+    font-Ubuntu font-medium
+    text-base text-[#1559A6] 
+}
+.footerHeaderText > p {
+    @apply
+    font-Ubuntu font-medium
+    text-[14px] leading-6 text-[#1559A6] 
+}
+.footerHeaderSocialIcon {
+    @apply
+    flex gap-3
+    pt-2
+}
+.footerContent {
+    @apply
+    container mx-auto
+    bg-[url('../../assets/img/footercontbg.svg')] bg-no-repeat bg-right-bottom 
+    pt-[115px]
+    flex justify-between 
+    pb-11
+    md:invisible sm:max-w-full sm:invisible sm:overflow-hidden
+    md:mt-[180px] sm:mt-[180px]
+    sm:pt-0
+}
+.footerContent > div > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-white text-lg
+    mb-4
+}
+.footerContent > div > ul > li > a {
+    @apply
+    font-Ubuntu font-normal
+    text-white text-sm leading-6
+}
+.footerBottom {
+    @apply
+    bg-[#135298]
+    /* border-t border-white */
+    md:bg-[#0257AB] sm:bg-[#0257AB]
+}
+.footerBottomContent {
+    @apply
+    container mx-auto
+    flex justify-between items-center flex-wrap
+    pt-6 pb-4
+    md:flex-col sm:flex-col
+    md:gap-8 sm:gap-8
+}
+.footerBottomContentLogo {
+    @apply
+    flex items-center
+    gap-9
+    md:flex-col sm:flex-col
+    md:max-w-[220px] sm:max-w-[200px]
+    max-h-[74px]
+}
+.footerBottomContentLogo > div {
+    @apply
+    max-w-[200px]
+}
+.footerBottomContentLogo > p {
+    @apply
+    font-Ubuntu font-normal
+    text-white text-xs leading-6
+}

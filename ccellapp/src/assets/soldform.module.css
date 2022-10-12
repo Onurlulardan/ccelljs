@@ -1,0 +1,42 @@
+.pageHeader {
+    @apply
+    container mx-auto
+    my-10
+    font-Ubuntu font-normal
+    text-[32px] leading-10
+    text-[#082546]
+}
+.formCover {
+    @apply
+    container mx-auto
+}
+.form {
+    @apply
+    border border-[#DDDFE7] rounded-[9px]
+    p-4
+}
+.form > label > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-sm text-[#76797C]
+    my-2
+}
+.form > label > input {
+    @apply
+    font-Ubuntu font-normal
+    text-sm text-[#76797C]
+    border border-[#DDDFE7] rounded-[9px] outline-none
+    p-2 w-full
+}
+.formBtn {
+    @apply
+    mt-[30px] mb-10
+}
+.formBtn > a {
+    @apply
+    py-4 px-20
+    bg-[#1559A6]
+    text-white text-base
+    font-Ubuntu font-medium
+    rounded-[9px]
+}

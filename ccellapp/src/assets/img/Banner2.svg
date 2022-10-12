@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1110" height="130" viewBox="0 0 1110 130">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle" width="1110" height="130" rx="16" fill="#a4abb1"/>
+    </clipPath>
+  </defs>
+  <g id="Banner" clip-path="url(#clip-path)">
+    <path id="Rectangle_" data-name="Rectangle " d="M16,0H1094a15.919,15.919,0,0,1,16,15.838v98.325A15.919,15.919,0,0,1,1094,130H16A15.919,15.919,0,0,1,0,114.162V15.838A15.919,15.919,0,0,1,16,0Z" fill="#1559a6"/>
+    <rect id="Rectangle-2" data-name="Rectangle" width="103.78" height="103.78" rx="51.89" transform="matrix(0.966, -0.259, 0.259, 0.966, -19, 72.36)" fill="#144984" opacity="0.413"/>
+    <circle id="Oval" cx="177.5" cy="177.5" r="177.5" transform="translate(739 14.5)" fill="#082546" opacity="0.114" style="mix-blend-mode: multiply;isolation: isolate"/>
+  </g>
+</svg>

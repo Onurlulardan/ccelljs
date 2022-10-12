@@ -1,0 +1,115 @@
+.pageHeader {
+    @apply
+    container mx-auto
+    my-10
+}
+.pageHeader > div > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-[32px] leading-[44px]
+}
+.pageHeader > div {
+    @apply
+    flex justify-between
+}
+.pageHeaderSocial {
+    @apply
+    flex gap-3
+    sm:hidden
+}
+.pageHeaderSocial > a > div {
+    @apply
+    w-[30px] h-[30px] rounded-[50%]
+    border border-[#C3CAE0]
+    flex justify-center items-center
+    text-[#C3CAE0]
+    hover:bg-[#123075]
+    hover:border-[#123075]
+}
+.pageContent {
+    @apply
+    container mx-auto
+    flex flex-wrap gap-24
+}
+.contentTextHeader > h1 {
+    @apply
+    font-Ubuntu font-bold
+    text-[#044E96] text-2xl
+    mb-5
+}
+.contentTextHeader > p {
+    @apply
+    font-Ubuntu font-normal
+    text-black text-base
+    pb-7 max-w-[445px]
+    border-b border-b-[#E2E5EF]
+}
+.contentTextItem {
+    @apply
+    mt-6
+}
+.contentTextItem > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[#123075] text-base
+    mb-3 pt-3
+}
+.contentTextItem > a {
+    @apply
+    font-Ubuntu font-normal
+    text-black text-base
+     max-w-[306px] 
+}
+.contentTextItemMap {
+    @apply
+    font-Barlow font-medium
+    text-[#0C1350] text-base leading-8
+    border border-[#C3CAE0] rounded-[23px]
+    p-2 pb-2
+}
+.contentTextItem > a > i {
+    @apply
+    text-[#9FA7C0] pl-4
+    cursor-pointer
+}
+.contentForm {
+    @apply
+    w-2/4
+    mt-12
+    sm:w-full md:w-full
+}
+.contentForm > label > p {
+    @apply
+    font-Ubuntu font-normal
+    text-sm text-[#76797C]
+    block
+}
+.contentForm > label > input {
+    @apply
+    w-full h-[50px]
+    border border-[#DDDFE7]
+    rounded-[9px]
+    p-2
+}
+.contentForm > label > textarea {
+    @apply
+    w-full min-h-[155px] 
+    border border-[#DDDFE7]
+    rounded-[9px]
+    p-2
+}
+.contentForm > div > a {
+    @apply
+    bg-[#1559A6]
+    p-4
+    font-Ubuntu font-medium
+    text-white text-base
+    border border-[#1559A6] rounded-[9px]
+    w-[215px]
+    flex justify-center items-center
+    mt-8
+    hover:bg-white
+    hover:text-[#1559A6]
+    focus:border-white
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+}

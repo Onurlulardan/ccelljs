@@ -1,0 +1,123 @@
+.pageContainer {
+    @apply
+    container mx-auto
+}
+.pageHeader > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-[32px] leading-10
+    my-10
+}
+.pageContent {
+    @apply
+    flex gap-24 flex-wrap
+}
+.bundleFormCover {
+    @apply
+    px-8
+    max-w-[445px]
+    bg-white
+    border border-[#DDDFE7] rounded-[13px]
+}
+.bundleFormTextHeader {
+    @apply
+    font-Ubuntu font-medium
+    text-base text-[#082546] leading-6
+    pt-5
+}
+.bundleFormText {
+    @apply
+    font-Ubuntu font-normal
+    text-sm leading-[54px] 
+    text-[#76797C]
+}
+.bundleFormInput {
+    @apply
+    flex flex-col gap-4
+}
+.bundleFormInput > label > input {
+    @apply
+    border border-[#DDDFE7]
+    rounded-[9px]
+    w-full pl-6
+    h-12
+}
+.bundleFormInput > label > p {
+    @apply
+    font-Ubuntu font-normal
+    text-sm leading-5
+    text-[#76797C]
+    mb-2
+}
+.bundleFormInputCheckbox {
+    @apply
+    flex items-center
+}
+.bundleFormInputCheckbox > input {
+    @apply
+    rounded-[7px]
+    w-5 h-5 
+    mr-1
+    appearance-none bg-white
+    border border-[#76797C]
+    checked:bg-[#1559A6]
+    checked:border-[#1559A6]
+    outline-none
+    cursor-pointer
+    text-white
+    text-center leading-[100%]
+    checked:before:content-["✓"]
+}
+.bundleFormInputCheckbox > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-[14px] leading-6
+}
+.bundleFormButton {
+    @apply
+    mt-[30px] mb-10
+}
+.bundleFormButton > a {
+    @apply
+    py-4 px-20
+    bg-[#1559A6]
+    text-white text-base
+    font-Ubuntu font-medium
+    rounded-[9px]
+}
+.bundleFormAydinlatmaMetni {
+    @apply
+    font-Ubuntu font-normal
+    text-sm text-[#76797C]
+    pl-5 max-w-[351px]
+}
+.pageContent {
+    @apply
+    container mx-auto
+    flex items-start 
+    md:flex-col-reverse sm:flex-col-reverse
+    md:items-center sm:items-center
+}
+.imageInfo {
+    @apply
+    flex items-center gap-[75px] flex-wrap
+    mt-16 px-7
+}
+.imageInfo > div {
+    @apply
+    flex 
+}
+.imageInfoText {
+    @apply
+    ml-4
+}
+.imageInfoText > h6 {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-base 
+}
+.imageInfoText > p {
+    @apply
+    font-Ubuntu font-medium
+    text-[#76797C] text-[14px] leading-5
+}

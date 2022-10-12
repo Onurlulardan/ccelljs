@@ -1,0 +1,136 @@
+.pageHeader {
+    @apply
+    container mx-auto
+    mb-[72px] mt-10
+}
+.pageHeader > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-[32px] leading-[44px]
+}
+.pageContainer {
+    @apply
+    container mx-auto
+
+}
+.swiperCover {
+    @apply
+    max-w-[445px]
+    relative
+    sm:max-w-[90%]
+}
+.swiperTop {
+    @apply
+    border border-[#DDDFE7]
+    rounded-[13px]
+    bg-white
+    px-10 py-8
+    mb-3
+}
+.swiperButtonCover {
+    @apply
+    absolute
+    top-[35%] flex justify-between
+    z-10
+}
+.swiperBottom {
+    @apply
+    border border-[#DDDFE7]
+    rounded-[13px]
+    bg-white
+    px-[14px] py-6
+    max-h-[100px]
+    overflow-hidden
+}
+.modemImgCover {
+    @apply
+    flex justify-center items-center
+}
+.modemlg {
+    @apply
+    max-h-[257px]
+    max-w-[367px]
+}
+.modemsm {
+    @apply
+    max-h-[72px]
+    max-w-[72px]
+}
+.pageSlider {
+    @apply
+    flex gap-[125px]
+    md:flex-wrap sm:flex-wrap
+    md:justify-center sm:justify-center
+}
+.swiperText > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[#1559A6] text-[28px] leading-10
+    max-w-[460px] mb-6
+}
+.swiperText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-[#082546]
+    mb-10
+}
+.purschare {
+    @apply
+    flex gap-10
+}
+.purschareText {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-[#76797C]
+}
+.purscharePrice {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-3xl
+    mt-2
+}
+.purschareBtn {
+    @apply
+    p-4
+    bg-[#1559A6] 
+    rounded-[9px] text-center leading-4 text-white text-base
+    font-Ubuntu font-medium
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    max-h-[50px]
+    border border-[#1559A6]
+    hover:bg-white
+    hover:text-[#1559A6]
+    focus:border-white
+}
+.pageContentHeader {
+    @apply
+    mt-[100px]
+    font-Ubuntu font-medium
+    text-[32px] leading-[43px] text-[#082546]
+}
+.pageContentTable {
+    @apply
+    w-full
+}
+.thead {
+    @apply
+    text-left
+    pb-10 pt-11
+    font-Ubuntu font-medium
+    text-2xl text-[#DDDFE7]
+}
+.trow {
+    @apply
+    h-[68px]
+    border-t border-[#DDDFE7]
+    even:bg-[#F8FAFF]
+}
+.trhead {
+    @apply
+    max-w-[312px]
+}
+.trbody {
+    @apply
+    max-w-[468px]
+    pt-8 pb-4
+}

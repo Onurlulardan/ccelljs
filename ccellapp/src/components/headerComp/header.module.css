@@ -1,0 +1,168 @@
+.header {
+    @apply
+    bg-blue-rgba
+  }
+  .headerTop {
+    @apply
+    container mx-auto
+    grid
+    grid-cols-12
+    gap-7
+    h-full
+    -mb-[1px]
+    py-[13px]
+    sm:hidden
+  }
+  .headerTopItem {
+    @apply
+    flex justify-end
+    col-span-12
+    items-center
+  }
+  .headerTopItem > ul {
+    @apply
+    flex
+  }
+  .headerTopItem > ul > li > a {
+    @apply
+    text-sm
+    font-Ubuntu
+    font-normal
+    text-[#FFE500]
+    pl-7
+  }
+  .langMenuCover {
+    @apply
+    pl-12
+    text-white
+    relative
+  }
+  .langMenu {
+    @apply
+    flex gap-1
+  }
+  .langMenuHover {
+    @apply
+    font-Ubuntu font-normal
+    hidden absolute top-7
+    bg-white text-[#1559A6]
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    p-4 rounded-[9px]
+    flex-col gap-2 
+  }
+  .headerMenuCover {
+    @apply
+    bg-[#1559A6]
+    pt-6
+    sm:px-4
+  }
+  .headerMenu {
+    @apply
+    container mx-auto
+    flex
+    justify-between
+    items-center
+  }
+  .headerLogoTop {
+    @apply
+    max-w-[200px]
+    sm:max-w-[155px]
+  }
+  .headerLogo {
+    @apply
+    max-w-[220px]
+    max-h-[74px] mb-2
+  }
+  .headerLink  {
+    @apply
+    justify-end
+    hidden
+    xl:flex 2xl:flex
+  }
+  .headerMobilMenu {
+    @apply
+    flex justify-end
+    xl:hidden 2xl:hidden
+    text-4xl text-white
+  }
+  .headerLink > ul {
+    @apply
+    flex
+  }
+  .headerLink > ul > li{
+    @apply
+    pr-7
+    last:pr-0
+    font-Ubuntu
+    font-normal
+    text-base
+    leading-5
+    text-white
+  }
+  .menuBtn {
+    @apply
+    bg-white
+    font-Ubuntu
+    font-medium
+    text-base
+    leading-[20px]
+    text-[#1559A6]
+    py-3
+    px-4
+    rounded-[9px]
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    hover:bg-[#FFD600]
+  }
+  .headerMobilMenus {
+    @apply
+    flex justify-start flex-col
+    absolute top-0 bottom-0
+    bg-[#1559A6] h-[800px]
+    z-20
+     w-full pt-7
+  }
+  .headerMobilMenuTop {
+    @apply
+    flex justify-between w-full
+  }
+  .headerMobilMenuContent {
+    @apply
+    flex flex-col gap-6
+    mt-16 bg-[#1559A6] w-full
+    px-6
+  }
+  .headerMobilMenuContentItem > a {
+    @apply
+    font-Ubuntu font-medium
+    text-white text-2xl
+  }
+  .onlineislem {
+    @apply
+    mt-14 flex justify-center items-center
+  }
+  .onlineislembtn {
+    @apply
+    bg-white
+    font-Ubuntu
+    font-medium
+    text-base
+    leading-[20px]
+    text-[#1559A6]
+    py-3
+    px-4
+    rounded-[9px]
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    hover:bg-[#FFD600]
+  }
+  .lang {
+    @apply
+    mt-6 mb-16 flex justify-center items-center font-Ubuntu font-normal text-sm
+  }
+  .lang > .langMenuCover {
+    @apply 
+    pl-0
+  }
+  .headerLogoMobile {
+    @apply
+    max-w-[150px]
+  }

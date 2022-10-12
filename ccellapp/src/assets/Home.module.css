@@ -1,0 +1,776 @@
+.main {
+    @apply
+    -mt-[1px]
+  }
+  .swiperConteinerCover {
+    @apply
+    bg-[#1559A6]
+    relative
+  }
+  .swiperConteiner {
+    @apply
+    container mx-auto
+  }
+  .sliderItem {
+    @apply
+    flex
+    items-center
+    md:flex-col-reverse sm:flex-col-reverse
+  }
+  .sliderItemText {
+    @apply
+    pb-24
+    -mr-10
+    md:pb-8 md:-mr-[180px] sm:-mr-[30px]
+    sm:max-w-[350px] sm:overflow-hidden
+  }
+  .sliderItemText > h1 {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-[40px]
+    leading-[60px]
+    text-white
+    mb-10
+    w-[493px]
+    md:text-[26px] sm:text-[26px]
+    sm:max-w-[320px] sm:overflow-hidden
+  }
+  .sliderItemText > a {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-[16px]
+    leading-[20px]
+    text-white
+    px-[15px]
+    py-5
+    border
+    border-white
+    rounded-[9px]
+  }
+  .swiperButtonCover {
+    @apply
+    absolute
+    w-full
+    top-2/4
+    -translate-y-2/4
+    hidden
+    xl:block 2xl:block
+  }
+  .swiperPeginationCover {
+    @apply
+    pt-[65px]
+    pb-[25px]
+    bg-[#1559A6]
+    flex justify-center items-center
+    w-full
+  }
+  .bundleContainer {
+    @apply
+    container mx-auto
+    mt-[100px]
+  }
+  .bundleHeader {
+    @apply
+    flex justify-between items-center
+    mb-14
+  }
+  .bundleHeader > h1 {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-[32px]
+    leading-[43px]
+    text-[#082546]
+  }
+  .bundleHeader > a {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-sm
+    leading-[26px]
+    text-[#76797C]
+    md:hidden sm:hidden
+  }
+  .bundleHeader > a > i {
+    @apply
+    text-[15px]
+    text-[#1559A6]
+    pl-[15px]
+  }
+  .bundeCardMobile {
+    @apply
+    hidden
+    md:block sm:block
+  }
+  .bundleHeaderMobileBottom {
+    @apply
+    flex justify-center items-center
+    mt-9
+    xl:hidden 2xl:hidden
+  }
+  .bundleCardCover {
+    @apply
+    flex flex-wrap
+    gap-[33px]
+    md:hidden sm:hidden
+  }
+  .bundleCard {
+    @apply
+    bg-white
+    border border-[#DDDFE7]
+    rounded-[13px]
+    max-w-[255px]
+  }
+  .bundleCard > h1 {
+    @apply
+    font-Ubuntu
+    font-bold
+    text-[24px]
+    leading-[54px]
+    text-[#082546]
+    pl-4
+    pt-5
+  }
+  .bundlePrice {
+    @apply
+    bg-[#FFD600]
+    rounded-[9px]
+    shadow-[0_3px_6px_0px_rgba(195,202,224,0.54)]
+    -ml-[10px]
+    mb-8
+    w-[223px]
+    h-[50px]
+  }
+  .bundlePrice > p {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-sm
+    text-[#082546]
+    pl-[22px]
+    pt-[3px]
+  }
+  .bundleInfoCover {
+    @apply
+    pl-4
+    pr-7
+  }
+  .bundleInfo {
+    @apply
+    flex
+    pb-5
+  }
+  .bundleInfoText {
+    @apply
+    ml-4
+  }
+  .bundleInfoText > h3 {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-base
+    text-[#082546]
+  }
+  .bundleInfoText > p {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-sm
+    text-[#76797C]
+  }
+  .bundleInfoBtn {
+    @apply
+    flex
+    justify-center
+    items-center
+    pb-6
+  }
+  .bundleInfoBtn > a {
+    @apply
+    flex
+    justify-center
+    font-Ubuntu
+    font-medium
+    text-base
+    leading-[20px]
+    text-[#1559A6]
+    py-4
+    px-20
+    border border-[#DDDFE7]
+    rounded-[13px]
+  }
+  .speedTestContiner {
+    @apply
+    container mx-auto
+    mt-[135px]
+    bg-[#1559A6]
+    rounded-2xl
+    bg-[url('../assets/img/logobg.svg')]
+    bg-no-repeat
+    md:bg-bottom sm:bg-bottom
+    sm:max-w-[94%]
+  }
+  .speedTest {
+    @apply
+    flex
+    w-full
+    md:flex-col
+    md:items-center
+    sm:flex-col
+    sm:items-center
+  }
+  .speedMeterCover {
+    @apply
+    w-2/4
+    flex justify-center items-center
+    py-[26px]
+    md:-mt-20 sm:-mt-20
+  }
+  .speedMeter {
+    @apply
+    w-[231px]
+    h-[248px]
+    bg-white
+    rounded-xl
+    shadow-[0_10px_45px_0px_rgba(71,59,240,0.10)]
+  }
+  .speedTestText {
+    @apply
+    w-2/4
+    flex flex-col justify-center 
+    md:text-center sm:text-center
+    md:items-center sm:items-center
+    md:pb-9 sm:pb-9
+  }
+  .speedTestText > h1 {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-white
+    text-[32px]
+    leading-[43px]
+  }
+  .speedTestText > p {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-white
+    text-base
+    mt-6
+    mb-10
+    max-w-[470px]
+  }
+  .speedTestText > button {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-white
+    text-base
+    flex
+    w-[200px]
+    p-4
+    rounded-[9px]
+    border border-white
+    hover:bg-[#FFD600]
+    hover:text-black
+    hover:border-[#FFD600]
+  }
+  .taahhutContainer {
+    @apply
+    container mx-auto
+    flex justify-center items-center
+    mt-[60px]
+    mb-[80px]
+    md:flex-col-reverse sm:flex-col-reverse
+    
+  }
+  .taahhutText  {
+    @apply
+    flex flex-col items-end
+    pt-[100px]
+    md:items-center sm:items-center
+    md:pt-9 sm:pt-9
+  }
+  .taahhutText > p {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-[28px]
+    leading-[40px]
+    text-[#1559A6]
+    text-end
+    md:text-center sm:text-center
+  }
+  .taahhutText > a {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-[16px]
+    leading-[20px]
+    text-white
+    p-4
+    bg-[#1559A6]
+    rounded-[9px]
+    shadow-[0_10px_45px_0px_rgba(0,70,126,0.15)]
+    border border-[#1559A6]
+    hover:bg-white
+    hover:border-[#1559A6]
+    hover:text-[#1559A6]
+    focus:border-white
+    mt-9
+  }
+  .altYapiContainer {
+    @apply
+    container mx-auto
+  }
+  .altYapiItem {
+    @apply
+    bg-[#FFD600]
+    flex justify-between items-center
+    rounded-2xl
+    px-[45px]
+    bg-[url('../assets/img/Banner.svg')]
+    bg-no-repeat
+    h-[131px]
+    md:flex-col sm:flex-col
+    md:items-center sm:items-center
+    md:justify-center sm:justify-center
+    md:h-[256px] sm:h-[256px]
+    md:bg-bottom sm:bg-bottom
+  }
+  .altYapiItem > h1 {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-[32px]
+    leading-[43px]
+    text-[#1559A6]
+  }
+  .altYapiItem > p {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-base
+    text-[#082546]
+    md:mt-4 sm:mt-4
+    md:mb-6 sm:mb-6
+  }
+  .altYapiItem > a {
+    @apply
+    p-4
+    bg-[#1559A6]
+    font-Ubuntu 
+    font-medium
+    text-base
+    leading-[20px]
+    rounded-[9px]
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    text-white
+    flex
+    hover:bg-white
+    hover:text-[#1559A6]
+  }
+  .altYapiItem > a > i {
+    @apply
+    hover:text-[#1559A6]
+  }
+  .infoContainer {
+    @apply
+    mt-[80px]
+    container mx-auto
+    gap-7
+    flex flex-wrap
+    md:flex-col sm:flex-col
+    md:items-center sm:items-center
+  }
+  .infoItem {
+    @apply
+    w-[255px]
+    h-[303px]
+    border border-[#DDDFE7]
+    rounded-[10px]
+    pt-[45px]
+    px-[20px]
+    hover:bg-[#0263B1]
+    hover:shadow-[0_3px_6px_0px_rgba(71,59,240,0.10)]
+  }
+  .infoIcon {
+    @apply
+    bg-[#1559A6]
+    w-[60px]
+    h-[60px]
+    flex items-center justify-center
+    rounded-[50%]
+    mb-5
+  }
+  .infoItem > h1 {
+    @apply
+    font-Ubuntu
+    text-[22px]
+    text-[#1559A6]
+    font-normal
+    leading-[30px]
+    mb-4
+  }
+  .infoItem > p { 
+    @apply
+    text-base
+    text-[#6E727D]
+    font-Ubuntu
+    font-normal
+  }
+  .modemConteiner {
+    @apply
+    container mx-auto
+    relative  
+    mt-24
+  }
+  .modemConteinerItem {
+    @apply
+    flex
+    gap-20
+    md:flex-col sm:flex-col
+    md:items-center sm:items-center
+    md:gap-4 sm:gap-4
+  }
+  .modemImage {
+    @apply
+    w-2/4
+    justify-end
+  }
+  .modemImageMobile {
+    @apply
+    hidden md:flex sm:flex w-full
+    md:mb-10 sm:mb-10
+  }
+  .modemText {
+    @apply
+    w-2/4
+    md:flex sm:flex
+    md:flex-col sm:flex-col
+    md:items-center sm:items-center
+    md:w-full sm:w-full
+  }
+  .modemText > h1 {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-[28px]
+    leading-[40px]
+    text-[#1559A6]
+    md:text-2xl sm:text-2xl
+  }
+  
+  .modemText > p {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-base
+    text-[#082546]
+    mt-6
+    mb-20
+    md:mb-4 sm:mb-4
+  }
+  .modemText > a {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-base
+    text-white
+    p-4
+    rounded-[9px]
+    bg-[#1559A6]
+    border border-white
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    hover:bg-white
+    hover:text-[#1559A6]
+    
+  }
+  .modembottom {
+    @apply
+    bg-[#1559A6]
+    rounded-2xl
+    w-full
+    h-[130px]
+    absolute
+    -z-10
+    -bottom-[35px]
+    bg-[url('../assets/img/Banner2.svg')]
+    bg-no-repeat
+    md:min-h-[208px] sm:min-h-[208px]
+    md:bg-bottom sm:bg-bottom
+    sm:max-w-[93%]
+  }
+  .secondSwiperContainer {
+    @apply
+    container mx-auto
+    mt-[100px]
+  }
+  .secondSwiperHeader {
+    @apply
+    flex justify-between
+    mb-14
+  }
+  .secondSwiperHeader > h1 {
+    @apply
+    font-Ubuntu
+    font-normal
+    text-[32px]
+    leading-[43px]
+    text-[#082546]
+  }
+  .secondSwiperHeader > a {
+    @apply
+    font-Ubuntu
+    font-medium
+    text-[14px]
+    leading-[26px]
+    text-[#76797C]
+  }
+  .secondSliderItem {
+    @apply
+    max-w-[350px]
+    flex flex-col items-center
+    border border-white
+    hover:border
+    hover:border-[#DDDFE7]
+    rounded-[9px]
+    pt-4
+    pb-9
+  }
+  .secondSliderItem > a > img {
+    @apply
+    rounded-md
+  }
+  .secondSliderItem > div {
+    @apply
+    px-[18px]
+  }
+  .secondSliderItem > div > h6 {
+    @apply
+    mt-4
+    mb-6
+    flex items-center
+    font-normal
+    font-Ubuntu
+    text-sm text-[#606060]
+  }
+  .secondSliderItem > div > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-[22px] leading-8
+    mb-11
+  }
+  .secondSliderItem > div > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-[16px] leading-5
+    invisible
+  }
+  .mapSection {
+    @apply
+    mt-[100px]
+    container mx-auto
+  }
+  .mapCover {
+    @apply
+    bg-[#1559A6]/[0.05]
+    rounded-2xl
+    mr-32
+    md:mr-0 sm:mr-0
+  }
+  .mapItem {
+    @apply
+    py-11
+    pl-11
+    flex justify-between items-center
+    flex-wrap
+    gap-0
+    md:justify-center sm:justify-center
+    md:py-4 md:px-4 sm:px-4 sm:py-4
+  }
+  .mapText {
+    @apply
+    -mr-32
+    bg-white
+    bg-[url('../assets/img/logobggray.svg')]
+    max-w-[431px]
+    bg-bottom bg-no-repeat
+    p-8
+    rounded-xl
+    shadow-[0_10px_45px_0px_rgba(21,89,166,0.20)]
+    md:mt-8 sm:mt-8
+    md:mr-0 sm:mr-0
+  }
+  
+  .mapText > h1 {
+    @apply
+    font-Ubuntu
+    text-[#1559A6] text-[28px] leading-10
+  }
+  .mapText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-base
+    max-w-[367px]
+    py-6
+    pb-10
+  }
+  .mapText > a {
+    @apply
+    font-Ubuntu font-medium
+    text-white text-base leading-5
+    bg-[#1559A6]
+    p-4
+    rounded-[9px]
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    border border-[#1559A6]
+    hover:bg-white
+    hover:text-[#1559A6]
+    focus:border-white
+    focus:bg-white
+    focus:text-[#1559A6]
+  }
+  .personReview {
+    @apply
+    mt-20
+    container mx-auto
+  }
+  .personReviewHeader {
+    @apply
+    flex justify-between items-start
+  }
+  .personReviewHeader > div > h1 {
+    @apply
+    font-Ubuntu font-normal
+    text-[32px] leading-[43px] text-[#082546]
+  }
+  .personReviewHeader > div > p {
+    @apply
+    max-w-[540px]
+    mt-9
+    font-Ubuntu font-normal
+    text-base text-[#082546]
+  }
+  .personReviewHeader > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#76797C] text-sm leading-[26px]
+    md:hidden sm:hidden
+  }
+  .thirdSwiperCover {
+    @apply
+    mt-16
+  }
+  .thirdSwiperItem {
+    @apply
+    shadow-[0_10px_30px_0px_rgba(21,89,166,0.20)]
+    px-4
+    pt-4
+    pb-8
+    rounded-xl
+    my-10
+    mx-4
+  }
+  .rank {
+    @apply
+    flex justify-end items-center
+  }
+  .rank > div {
+    @apply
+    bg-[#479A5F]
+    rounded-lg
+    flex
+    py-[6px]
+    px-3
+    text-white
+    font-Ubuntu font-medium
+    text-base
+  }
+  .thirdSwiperItemText {
+    @apply
+    flex items-start
+    gap-10
+  }
+  .thirdSwiperItemText > div {
+    @apply
+    mt-4
+  }
+  .thirdSwiperItemText > div > p {
+    @apply
+    text-[#7A7A7A]
+    max-w-[334px]
+    font-Ubuntu font-normal
+    text-base
+    mb-6
+  }
+  .thirdSwiperItemText > div > h5 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-[22px] leading-9
+  }
+  .thirdSwiperItemText > div > h6 {
+    @apply
+    font-Ubuntu font-normal
+    text-[#1559A6] text-[22px] leading-9
+  }
+  .distributorContainer {
+    @apply
+    mt-12
+    container mx-auto
+  }
+  .distributor {
+    @apply
+    bg-[#FFD600]
+    rounded-2xl
+    flex 
+    h-[243px]
+    bg-[url('../assets/img/distbg.svg')]
+    bg-no-repeat
+    gap-16
+    bg-right
+    md:flex-col sm:flex-col
+    md:h-[355px] sm:h-[355px]
+    md:bg-bottom sm:bg-bottom
+    md:gap-0 sm:gap-0
+    md:items-center sm:items-center
+    md:text-center sm:text-center
+  }
+  .distributorImage  {
+    @apply
+    -mt-24
+    md:max-w-[350px] sm:max-w-[350px]
+  }
+  .distributorText {
+    @apply
+    py-9
+  }
+  .distributorText > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[28px] leading-9 text-[#1559A6]
+    mb-3
+  }
+  .distributorText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-[#082546]
+    mb-8
+    max-w-[320px]
+  }
+  .distributorText > a {
+    @apply
+    font-Ubuntu font-normal
+    text-base leading-5 text-white
+    rounded-[9px]
+    bg-[#1559A6]
+    p-4
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    border border-[#1559A6]
+    hover:bg-[#FFD600]
+    hover:text-[#1559A6]
+    focus:bg-white
+    focus:text-[#1559A6]
+  }

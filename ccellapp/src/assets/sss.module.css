@@ -1,0 +1,78 @@
+.pageContainer {
+    @apply
+    container mx-auto
+    flex flex-wrap justify-between items-start
+}
+.pageHeader {
+    @apply
+    container mx-auto
+}
+.pageHeader > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[#082546] text-[32px] leading-10
+    mt-10
+}
+.pageHeader > p {
+    @apply
+    font-Ubuntu font-medium
+    text-[#1559A6] text-[22px] leading-8
+    mt-4 mb-10
+}
+
+.pageContentMenu  {
+    @apply
+    rounded-xl
+    shadow-[0_10px_45px_0px_rgba(71,59,240,0.10)]
+    p-6 
+    h-full
+    bg-white
+    sm:mx-auto
+}
+.pageContentMenu > div {
+    @apply
+    max-w-[255px]
+    w-[200px]
+    pb-2
+}
+.pageContentMenu > div > a {
+    @apply
+    font-Ubuntu font-medium
+    text-[#76797C] text-base
+}
+.accordionContainer {
+    @apply
+    container
+     max-w-[730px]
+}
+.accordionItem {
+    @apply
+    max-w-[730px]
+    p-8 bg-white
+    border border-[#DDDFE7]
+    rounded-[13px]
+    focus:border-[#1559A6]
+    mb-12
+}
+.accordionHeader {
+    @apply
+    flex justify-between
+}
+.accordionHeader > div > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[22px] leading-8
+    text-[#082546]
+}
+.accordionText {
+    @apply
+    hidden
+    mt-6
+    border-t border-[#DDDFE7]  
+}
+.accordionText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-sm text-[#082546]
+    pt-6 max-w-[666px]
+}

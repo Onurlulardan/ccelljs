@@ -1,0 +1,54 @@
+.pageContainer {
+    @apply
+    container mx-auto
+    mt-14 rounded-2xl
+}
+.pageContainerTextHeader {
+    @apply
+    mt-9 mb-6
+    flex justify-between items-center
+}
+.pageContainerText {
+    @apply
+    max-w-[825px]
+    ml-auto
+}
+.pageContainerTextHeaderSocial {
+    @apply
+    flex gap-3
+}
+.pageContainerTextHeaderSocial > div {
+    @apply
+    text-[#DDDFE7] border border-[#DDDFE7]
+    rounded-[50%] w-[30px] h-[30px]
+    text-center leading-[30px]
+    hover:text-[#1559A6] hover:border-[#1559A6]
+}
+.pageText > h1 {
+    @apply
+    font-Ubuntu font-bold
+    text-[#044E96] text-[34px]
+    max-w-[525px] leading-[51px]
+}
+.pageText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-black
+    mt-8
+}
+.pageTextImage {
+    @apply
+    flex flex-wrap rounded-2xl
+    gap-8 my-[50px]
+    md:hidden sm:hidden
+}
+.pageTextImage > div {
+    @apply
+    max-w-[396px]
+}
+.pageTextImageSwiper {
+    @apply
+    hidden flex-wrap rounded-2xl
+    gap-8 py-[50px]
+    md:flex sm:flex
+}

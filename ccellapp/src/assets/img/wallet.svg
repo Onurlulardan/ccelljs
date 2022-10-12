@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="wallet-check" transform="translate(-236 -188)">
+    <g id="Group">
+      <path id="Vector" d="M8,4a3.921,3.921,0,0,1-.58,2.06,3.985,3.985,0,0,1-6.84,0A3.921,3.921,0,0,1,0,4,4,4,0,0,1,8,4Z" transform="translate(237 203)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M0,.98l.99.99L3.12,0" transform="translate(239.441 206.02)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(236 188)" fill="none" opacity="0"/>
+    <path id="Vector-4" data-name="Vector" d="M11.56,5.05A4.573,4.573,0,0,0,10.81,5H.81A5.322,5.322,0,0,0,0,5.06a3.043,3.043,0,0,1,.58-.78L3.83,1.02a3.525,3.525,0,0,1,4.96,0l1.75,1.77A3.374,3.374,0,0,1,11.56,5.05Z" transform="translate(242.191 190)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-5" data-name="Vector" d="M20,5v5a4.724,4.724,0,0,1-5,5H5.63a3.593,3.593,0,0,0,.79-.94A3.921,3.921,0,0,0,7,12,4,4,0,0,0,0,9.36V5A4.654,4.654,0,0,1,4.19.06,5.322,5.322,0,0,1,5,0H15a4.573,4.573,0,0,1,.75.05A4.664,4.664,0,0,1,20,5Z" transform="translate(238 195)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-6" data-name="Vector" d="M5,0H2A2,2,0,0,0,2,4H5" transform="translate(253 200.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

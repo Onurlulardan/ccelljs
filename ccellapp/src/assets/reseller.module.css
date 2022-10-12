@@ -1,0 +1,177 @@
+.PageHeader {
+    @apply
+    container mx-auto
+    font-Ubuntu font-normal
+    text-[#082546] text-[32px] leading-[44px]
+    my-10
+}
+.PageContent {
+    @apply
+    container mx-auto
+}
+.mapCover {
+    @apply
+    max-w-[920px] mx-auto
+}
+.mapBottom {
+    @apply
+    flex justify-between items-center flex-wrap
+    /* max-h-[122px] */
+    bg-bg-grayrgba
+    rounded-2xl p-4
+}
+.mapBottomText {
+    @apply
+    max-w-[334px]
+    sm:mb-5
+}
+.mapBottomText > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[#1559A6] text-[28px] leading-10
+}
+.mapBottomText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-[#082546] text-base
+}
+.mapBottomInput {
+    @apply
+    flex gap-4
+    max-w-[540px]
+    w-full
+}
+.mapBottomInput > input {
+    @apply
+    border border-[#76797C] rounded-[9px]
+    font-Ubuntu text-[#76797C] text-sm
+    p-4 w-full  bg-bg-grayrgba outline-none
+}
+.mapBottomInput > a {
+    @apply
+    bg-[#1559A6]
+    font-Ubuntu text-white font-medium text-base
+    hover:bg-bg-grayrgba hover:text-[#1559A6]
+    focus:bg-white
+    h-[50px] w-[93px]
+    flex justify-center items-center rounded-[9px]
+    shadow-[0_3px_6px_rgba(0,70,126,0.15)]
+}
+.resellerItemCover {
+    @apply
+    mt-10
+}
+.resellerItemHeader {
+    @apply
+    font-Ubuntu font-medium
+    text-[#76797C] text-[24px] leading-[44px]
+    mb-6
+}
+.resellerItemContentCover {
+    @apply
+    flex flex-wrap gap-7
+    sm:justify-center
+}
+.resellerItem {
+    @apply
+    max-h-[273px] max-w-[540px]
+    h-full w-full
+    border border-[#DDDFE7] rounded-xl
+    flex justify-start pt-10
+    hover:shadow-[0_10px_45px_rgba(21,89,166,0.20)]
+}
+.resellerItemText {
+    @apply
+    max-w-[397px]
+    bg-[url('../assets/img/buyboxbg.svg')]
+    bg-bottom bg-no-repeat
+    pl-7 pb-7
+    sm:pl-3
+}
+.resellerItemText > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-lg leading-6 text-[#1559A6] 
+}
+.resellerItemText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-[#082546] 
+    my-4
+}
+.resellerItemText > h6 {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-[#082546] 
+    mb-4
+}
+.resellerItemText > a {
+    @apply
+    bg-[#1559A6] p-4
+    font-Ubuntu font-medium text-white text-base
+    rounded-[9px]
+    w-[170px] h-[50px]
+    border border-[#1559A6]
+    hover:bg-white hover:text-[#1559A6]
+    focus:bg-white focus:border-white
+    shadow-[0_3px_6px_rgba(0,70,126,0.15)]
+    flex justify-center items-center
+}
+.distributorContainer {
+    @apply
+    mt-32
+    container mx-auto
+  }
+  .distributor {
+    @apply
+    bg-[#FFD600]
+    rounded-2xl
+    flex 
+    h-[243px]
+    bg-[url('../assets/img/distbg.svg')]
+    bg-no-repeat
+    gap-16
+    bg-right
+    md:flex-col sm:flex-col
+    md:h-[355px] sm:h-[355px]
+    md:bg-bottom sm:bg-bottom
+    md:gap-0 sm:gap-0
+    md:items-center sm:items-center
+    md:text-center sm:text-center
+  }
+  .distributorImage  {
+    @apply
+    -mt-24
+    md:max-w-[350px] sm:max-w-[350px]
+  }
+  .distributorText {
+    @apply
+    py-9
+  }
+  .distributorText > h1 {
+    @apply
+    font-Ubuntu font-medium
+    text-[28px] leading-9 text-[#1559A6]
+    mb-3
+  }
+  .distributorText > p {
+    @apply
+    font-Ubuntu font-normal
+    text-base text-[#082546]
+    mb-8
+    max-w-[320px]
+  }
+  .distributorText > a {
+    @apply
+    font-Ubuntu font-normal
+    text-base leading-5 text-white
+    rounded-[9px]
+    bg-[#1559A6]
+    p-4
+    shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
+    border border-[#1559A6]
+    hover:bg-[#FFD600]
+    hover:text-[#1559A6]
+    focus:bg-white
+    focus:text-[#1559A6]
+  }
