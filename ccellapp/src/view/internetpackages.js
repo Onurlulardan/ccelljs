@@ -3,7 +3,7 @@ import styles from '../assets/internetpackages.module.css';
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import hiz from '../assets/img/hiz.svg';
 import limit from '../assets/img/limit.svg';
@@ -14,9 +14,10 @@ import axios from 'axios';
 const Internetpackages = () => {
     const API = process.env.REACT_APP_MY_API;
     const IMG_PATH = process.env.REACT_APP_IMG_PATH;
+    let params = useParams();
     const [internetpackages, setInternetpackages] = useState([]);
     const [category, setCategory] = useState([]);
-    const [categoryid, setCatagoryid] = useState(1)
+    const [categoryid, setCatagoryid] = useState(params.id)
     const [updateState, setUpdateState] = useState(false);
     let maxLenght = 14;
 

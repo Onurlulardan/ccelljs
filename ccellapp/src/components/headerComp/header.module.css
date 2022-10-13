@@ -39,7 +39,8 @@
   }
   .langMenu {
     @apply
-    flex gap-1
+    flex gap-1 
+    cursor-pointer
   }
   .langMenuHover {
     @apply
@@ -48,7 +49,7 @@
     bg-white text-[#1559A6]
     shadow-[0_3px_6px_0px_rgba(0,70,126,0.15)]
     p-4 rounded-[9px]
-    flex-col gap-2 
+    flex-col gap-2 cursor-pointer
   }
   .headerMenuCover {
     @apply

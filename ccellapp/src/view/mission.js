@@ -3,6 +3,7 @@ import styles from '../assets/about.module.css';
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Link } from 'react-router-dom';
 
 const Mission = () => {
   return (
@@ -66,19 +67,19 @@ Sıra dışı internetin büyülü dünyasını MyFi ile keşfedin!
             </div>
             <div className={styles.pageContentMenu}>
                     <div>
-                        <a  href="#">Hakkımızda</a>
+                        <Link target={'_top'} to="/about" >Hakkımızda</Link>
                     </div>
                     <div>
-                        <a href="#">Ccell</a>
+                        <Link target={'_top'} to="/ccell">Ccell</Link>
                     </div>
                     <div>
-                        <a className="active" href="#">Misyon & Vizyon</a>
+                        <Link target={'_top'} to="/mission" className="active">Misyon & Vizyon</Link>
                     </div>
                     <div>
-                        <a href="#">Lisanslarımız</a>
+                        <Link target={'_top'} to="/licances">Lisanslarımız</Link>
                     </div>
                     <div>
-                        <a href="#">Basında Biz</a>
+                        <Link target={'_top'} to="/blog">Basında Biz</Link>
                     </div>
             </div>
         </section>

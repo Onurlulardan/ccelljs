@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../assets/about.module.css';
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 
 const  About = () => {
@@ -55,19 +56,19 @@ Aenean eu venenatis libero, at dictum nulla. Ut in interdum dolor. Proin egestas
             </div>
             <div className={styles.pageContentMenu}>
                     <div>
-                        <a className="active" href="#">Hakkımızda</a>
+                        <Link target={'_top'} to="/about" className="active">Hakkımızda</Link>
                     </div>
                     <div>
-                        <a href="#">Net Fiber</a>
+                        <Link target={'_top'} to="/ccell">Ccell</Link>
                     </div>
                     <div>
-                        <a href="#">Misyon & Vizyon</a>
+                        <Link target={'_top'} to="/mission">Misyon & Vizyon</Link>
                     </div>
                     <div>
-                        <a href="#">Lisanslarımız</a>
+                        <Link target={'_top'} to="/licances">Lisanslarımız</Link>
                     </div>
                     <div>
-                        <a href="#">Basında Biz</a>
+                        <Link target={'_top'} to="/blog">Basında Biz</Link>
                     </div>
             </div>
         </section>

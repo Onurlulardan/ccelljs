@@ -65,7 +65,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                <Link to="/">
+                <Link to="/reseller">
                     Altyapı Sorgula
                   </Link>
                 </li>
@@ -111,7 +111,7 @@ const Header = () => {
                   </Link>
             </div>
             <div className={styles.headerMobilMenuContentItem}>
-            <Link to="/">
+            <Link to="/reseller">
                     Altyapı Sorgula
                   </Link>
             </div>

@@ -6,6 +6,7 @@ import lisans2 from '../assets/img/lisans2.png';
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Link } from 'react-router-dom';
 
 function Licances() {
   return (
@@ -62,19 +63,19 @@ function Licances() {
             </div>
             <div className={styles.pageContentMenu}>
                     <div>
-                        <a  href="#">Hakkımızda</a>
+                        <Link target={'_top'} to="/about" >Hakkımızda</Link>
                     </div>
                     <div>
-                        <a href="#">Ccell</a>
+                        <Link target={'_top'} to="/ccell">Ccell</Link>
                     </div>
                     <div>
-                        <a href="#">Misyon & Vizyon</a>
+                        <Link target={'_top'} to="/mission" >Misyon & Vizyon</Link>
                     </div>
                     <div>
-                        <a className="active" href="#">Lisanslarımız</a>
+                        <Link target={'_top'} to="/licances" className="active">Lisanslarımız</Link>
                     </div>
                     <div>
-                        <a href="#">Basında Biz</a>
+                        <Link target={'_top'} to="/blog">Basında Biz</Link>
                     </div>
             </div>
         </section>

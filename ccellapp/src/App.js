@@ -44,7 +44,7 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/internetcampains' element={<Internetcampains/>} />
         <Route path='/internetcampainsdetail/:id' element={<Internetcampainsdetail/>} />
-        <Route path='/internetpackages' element={<Internetpackages/>} />
+        <Route path='/internetpackages/:id' element={<Internetpackages/>} />
         <Route path='/internetpackagedetail/:catid/:id' element={<Internetpackagesdetail/>} />
         <Route path='/licances' element={<Licances/>} />
         <Route path='/login' element={<Login/>} />

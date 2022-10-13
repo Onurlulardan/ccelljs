@@ -181,3 +181,6 @@
     padding-right: 16px;
   }
 }
+g[id="turkiye"] > g[data-reseller-city="true"] > path {
+  fill: #0257AB !important;
+}

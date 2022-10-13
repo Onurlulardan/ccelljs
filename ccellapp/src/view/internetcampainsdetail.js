@@ -4,7 +4,7 @@ import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import axios from 'axios';
-import { useParams,useLocation  } from 'react-router-dom';
+import { useParams,useLocation, Link  } from 'react-router-dom';
 
 import hiz from '../assets/img/hiz.svg';
 import limit from '../assets/img/limit.svg';
@@ -21,23 +21,33 @@ const Internetcampainsdetail = () => {
   const params = useParams();
   const location = useLocation();
   const [data, setData] = useState([]);
-  const [category, setCategory] = useState([]);
+  const [campainData, setCampainData] = useState([]);
+  const [checkData, setCheckData] = useState(false);
 
-  const getCategory = async () => {
+  const getCampainData = async () => {
     try {
-        await axios.get(`${API}Product/GetCategories`).then(res => {
-            setCategory(res.data.Data);
+        await axios.get(`${API}General/GetCampaign`).then(res => {
+          setCampainData(res.data.Data);
+          setCheckData(true);
         });
     } catch (error) {
         console.log(error);
     }
   }
 
+  const sliceData =  () => {
+      campainData.find((item) => {
+        if(item.id.toString() === params.id.toString()){
+          return setData(item)
+        }
+      })
+  }
+
   useEffect(()=>{
-    getCategory();
-    setData(location.state.item);
-    console.log(location.state.item);
-  },[]);
+    getCampainData();
+    console.log("state control")
+    sliceData();
+  },[checkData, params.id]);
 
 
   return (
@@ -154,9 +164,9 @@ const Internetcampainsdetail = () => {
               </div>
             </div>
             <div className={styles.pageContentMenu}>
-            { category.map((item, index)=> {
+            { campainData.map((item, index)=> {
                         return <div key={index}>
-                        <a className={item.id === data.category_id ? 'active' : ''} href={void(0)}> {item.category_name} </a>
+                        <Link to={`/internetcampainsdetail/${item.id}`} className={item.id === data.id ? 'active' : ''}> {item.campaign_title} </Link>
                     </div>
                     }) } 
             </div>

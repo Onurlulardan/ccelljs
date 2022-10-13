@@ -79,25 +79,28 @@
     border border-[#DDDFE7] rounded-xl
     flex justify-start pt-10
     hover:shadow-[0_10px_45px_rgba(21,89,166,0.20)]
+    overflow-hidden
 }
 .resellerItemText {
     @apply
-    max-w-[397px]
+    max-w-[397px] w-[397px]
+    min-h-[273px] 
     bg-[url('../assets/img/buyboxbg.svg')]
     bg-bottom bg-no-repeat
     pl-7 pb-7
-    sm:pl-3
+    sm:pl-3 sm:w-[350px]
 }
 .resellerItemText > h1 {
     @apply
     font-Ubuntu font-medium
     text-lg leading-6 text-[#1559A6] 
+    min-h-[48px]
 }
 .resellerItemText > p {
     @apply
     font-Ubuntu font-normal
     text-base text-[#082546] 
-    my-4
+    my-4 min-h-[48px]
 }
 .resellerItemText > h6 {
     @apply

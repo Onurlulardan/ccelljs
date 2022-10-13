@@ -183,7 +183,9 @@ const Home = () => {
                   {/* <h1>Siz de <span className='font-medium'>ccell</span> ile <br/>
                     Özgürlüğün <span className='font-bold'>Tadını Çıkarın!</span></h1> */}
                     <h1> {item.slider_text} </h1>
-                    <a href={void(0)}>Hemen Başvuru Yap</a>
+                    {item.slider_text.includes("Bayimiz olmak istermisiniz!") ? 
+                    (<Link to={`/soldform`} target={'_top'}>Hemen Başvuru Yap</Link>) : 
+                    (<Link to={`/referral`} target={'_top'}>Hemen Başvuru Yap</Link>)}
                 </div>
                 <div className={styles.sliderItemImage}>
                   <div className='relative'>
@@ -654,12 +656,12 @@ const Home = () => {
               return <SwiperSlide key={index}>
               <div className={`${styles.secondSliderItem} group`}>
                 <a href='#'>
-                  <img src={`${IMG_PATH}${item.img_path}`}/>
+                  <img src={`${IMG_PATH}blog/${item.img_path}`}/>
                 </a>
                 <div>
                   <h6> <span className='pr-[10px]'> <img src={calendar} /> </span> 25 Ağustos 2022</h6>
                   <p> {item.blog_title} </p>
-                  <a href="#" className='group-hover:visible'>Devamını Oku <i className="ri-arrow-right-line pl-3"></i></a>
+                  <Link to={`/blogdetail/${item.id}`} target={'_top'} className='group-hover:visible'>Devamını Oku <i className="ri-arrow-right-line pl-3"></i></Link>
                 </div>
               </div>
           </SwiperSlide>

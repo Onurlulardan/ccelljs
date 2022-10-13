@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../assets/login.module.css';
+import { loginSchema } from '../validations/loginValidations';
 
 import taahhut from '../assets/img/taahhut.svg';
 import sozlesme from '../assets/img/sozlesme.svg';
 import limit from '../assets/img/limit.svg';
 
 const Login =() => {
+    const [inputValid, setInputValid] = useState(true);
+
+
+    const loginUser = async (event) => {
+        event.preventDefault();
+        let formData = {
+            loginInfo: event.target[0].value,
+            password: event.target[1].value,
+            aydınlatma: event.target[2].value,
+            kvkk: event.target[3].value
+        }
+        const isValid = await loginSchema.isValid(formData);
+        console.log(isValid);
+        isValid === false ? setInputValid(false) : setInputValid(true);
+    }
+
   return (
     <main>
         <section className={styles.pageContainer}>
@@ -18,14 +35,15 @@ const Login =() => {
                     <h1 className={styles.bundleFormTextHeader}>Müşteri Numaranız, TC Kimlik Numaranız veya  <br/>
                     GSM Numaranız ile giriş yapabilirsiniz.</h1>
                     <p className={styles.bundleFormText}>Işık hızında fiber internet şimdi ilk 6 ay sadece 99 TL !</p>
+                    <form onSubmit={loginUser} >
                     <div className={styles.bundleFormInput}>
                         <label htmlFor="name">
                             <p>Müşteri Numarası, TC Kimlik Numarası veya  GSM Numarası</p>
-                            <input id="name" type="text" />
+                            <input id="name" type="text" className={inputValid === false ? 'border-none outline outline-2 outline-red-500' : ""} />
                         </label>
                         <label htmlFor="phone">
                             <p>Şifreniz</p>
-                            <input id="phone" type="text" />
+                            <input id="phone" type="text" className={inputValid === false ? 'border-none outline outline-2 outline-red-500' : ""} />
                         </label>
                         <label htmlFor="ayndınlatma">
                             <div className={styles.bundleFormInputCheckbox}>
@@ -35,7 +53,7 @@ const Login =() => {
                         </label>
                         <label htmlFor="ayndınlatma">
                             <div className={styles.bundleFormInputCheckbox}>
-                            <input id="ayndınlatma" type="checkbox" />
+                            <input id="kvkk" type="checkbox" />
                             <a href='#'>Kişisel verilerimin işlenmesine izin veriyorum.</a>
                             </div>
                         </label>
@@ -45,9 +63,10 @@ const Login =() => {
                             </p>
                         </div>
                         <div className={styles.bundleFormButton}>
-                            <a href="#">Başvuru Yap</a>
+                            <button type='submit' >Başvuru Yap</button>
                         </div>
                     </div>
+                    </form>
             </div>
             <div className={styles.imgContent}>
                 <img src={taahhut}/>

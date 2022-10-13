@@ -36,7 +36,7 @@ const Blog = () => {
             <div className={styles.pageContent}>
                 { blogs.map((item, index)=>{
                     return <div key={index} className={`${styles.pressItem} group`}>
-                    <img className={styles.pressImg} src={`${IMG_PATH}${item.img_path}`} />
+                    <img className={styles.pressImg} src={`${IMG_PATH}blog/${item.img_path}`} />
                     <div> <img src={calendar} /> <p>25 Ağustos 2022</p> </div>
                     <p className={styles.pressItemText}> {item.blog_title} </p>
                     <Link to={`/blogdetail/${item.id}`} className={`${styles.pressBtn} group-hover:visible`} target={'_top'}>

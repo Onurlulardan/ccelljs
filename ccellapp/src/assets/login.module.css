@@ -77,13 +77,13 @@
     @apply
     mt-[30px] mb-10
 }
-.bundleFormButton > a {
+.bundleFormButton > button {
     @apply
     py-4 px-20
     bg-[#1559A6]
     text-white text-base
     font-Ubuntu font-medium
-    rounded-[9px]
+    rounded-[9px] outline-none
 }
 .bundleFormAydinlatmaMetni {
     @apply
@@ -98,25 +98,25 @@
     md:flex-col-reverse sm:flex-col-reverse
     md:items-center sm:items-center
 }
-.imageInfo {
+.imgInfo {
     @apply
     flex items-center gap-[75px] flex-wrap
     mt-16 px-7
 }
-.imageInfo > div {
+.imgInfo > div {
     @apply
     flex 
 }
-.imageInfoText {
+.imgInfoText {
     @apply
     ml-4
 }
-.imageInfoText > h6 {
+.imgInfoText > h6 {
     @apply
     font-Ubuntu font-medium
     text-[#082546] text-base 
 }
-.imageInfoText > p {
+.imgInfoText > p {
     @apply
     font-Ubuntu font-medium
     text-[#76797C] text-[14px] leading-5

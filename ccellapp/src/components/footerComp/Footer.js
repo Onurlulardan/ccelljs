@@ -15,6 +15,8 @@ import linked from '../../assets/img/linked.svg';
 const Footer = () => {
     const API = process.env.REACT_APP_MY_API
     const [footerHeader, setFooterHeader] = useState([]);
+    const [categories, setCategories] = useState([]);
+    const [campains, setCampains] = useState([]);
 
     const getFooterHeader = async () => {
         try {
@@ -25,8 +27,31 @@ const Footer = () => {
             console.log(error)
         }
     }
+    const getCategories = async () => {
+        try {
+            await axios.get(`${API}Product/GetCategories`).then(res => {
+                setCategories(res.data.Data);
+                console.log(res.data.Data);
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    const getCampains = async () => {
+        try {
+            await axios.get(`${API}General/GetCampaign`).then(res => {
+                setCampains(res.data.Data);
+                console.log(res.data.Data);
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     useEffect(()=>{
         getFooterHeader();
+        getCategories();
+        getCampains();
     },[]);
 
     return (
@@ -78,41 +103,24 @@ const Footer = () => {
                     <div>
                         <h1>Hizmetler</h1>
                         <ul> 
-                            <li>
-                                <a href="#">Adsl</a>
+                            { categories.map((item, index) => {
+                                return <li key={index}>
+                                <Link to={`/internetpackages/${item.id}`} target={'_top'}> { item.category_name } </Link>
                             </li>
+                            }) }
                             <li>
-                                <a href="#">Vdsl</a>
-                            </li>
-                            <li>
-                                <a href="#">Fiber</a>
-                            </li>
-                            <li>
-                                <a href="#">Metro İnternet</a>
-                            </li>
-                            <li>
-                                <a href="#">Modem</a>
+                                <Link to="/modem" target={'_top'}>Modem</Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h1>İnternet Paketleri</h1>
                         <ul> 
-                            <li>
-                                <a href="#">ccell 16</a>
+                            { campains.slice(0, 5).map((item, index)=> {
+                                return <li key={index}>
+                                <Link to={`/internetcampainsdetail/${item.id}`} state={{ item: item}}> { item.campaign_title } </Link>
                             </li>
-                            <li>
-                                <a href="#">ccell 16</a>
-                            </li>
-                            <li>
-                                <a href="#">ccell 16</a>
-                            </li>
-                            <li>
-                                <a href="#">ccell 16</a>
-                            </li>
-                            <li>
-                                <a href="#">ccell 16</a>
-                            </li>
+                            }) }
                         </ul>
                     </div>
                     <div>
@@ -167,7 +175,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/packagedetail" target={'_top'}>
+                                <Link to="/soldform" target={'_top'}>
                                     Bayilik Başvurusu
                                 </Link>
                             </li>
