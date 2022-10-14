@@ -25,14 +25,14 @@
     @apply
     font-Ubuntu font-normal
     text-sm text-[#76797C]
-    border border-[#DDDFE7] rounded-[9px] outline-none
+    border border-[#DDDFE7] rounded-[9px]
     p-2 w-full
 }
 .formBtn {
     @apply
     mt-[30px] mb-10
 }
-.formBtn > a {
+.formBtn > button {
     @apply
     py-4 px-20
     bg-[#1559A6]

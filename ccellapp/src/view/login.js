@@ -1,27 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../assets/login.module.css';
-import { loginSchema } from '../validations/loginValidations';
+import { Formik, Form, Field, ErrorMessage, useFormik } from 'formik';
+import { Link } from 'react-router-dom';
 
 import taahhut from '../assets/img/taahhut.svg';
 import sozlesme from '../assets/img/sozlesme.svg';
 import limit from '../assets/img/limit.svg';
 
+
+// const validate = values => {
+//     const errors = {};
+//     if (!values.firstName) {
+//       errors.firstName = 'Required';
+//     } else if (values.firstName.length > 15) {
+//       errors.firstName = 'Must be 15 characters or less';
+//     }
+  
+//     if (!values.lastName) {
+//       errors.lastName = 'Required';
+//     } else if (values.lastName.length > 20) {
+//       errors.lastName = 'Must be 20 characters or less';
+//     }
+  
+//     if (!values.email) {
+//       errors.email = 'Required';
+//     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+//       errors.email = 'Invalid email address';
+//     }
+  
+//     return errors;
+//   };
+
+
 const Login =() => {
-    const [inputValid, setInputValid] = useState(true);
-
-
-    const loginUser = async (event) => {
-        event.preventDefault();
-        let formData = {
-            loginInfo: event.target[0].value,
-            password: event.target[1].value,
-            aydınlatma: event.target[2].value,
-            kvkk: event.target[3].value
-        }
-        const isValid = await loginSchema.isValid(formData);
-        console.log(isValid);
-        isValid === false ? setInputValid(false) : setInputValid(true);
-    }
+    const [validationState, setValidationState] = useState([]);
 
   return (
     <main>
@@ -32,29 +44,74 @@ const Login =() => {
         </section>
         <section className={styles.pageContent}>
             <div className={styles.bundleFormCover}>
+            <Formik
+                initialValues={{ loginfo: '', password: '', ayndinlatma: false, kvkk: false}}
+                validate={values => {
+                    const errors = {};
+                    if (!values.loginfo) {
+                    errors.loginfo = ' * Boş bırakılamaz!';
+                    } 
+                
+                    if (!values.password) {
+                    errors.password = ' * Boş bırakılamaz!';
+                    } else if (values.password.length < 8) {
+                    errors.password = ' * Şifreniz en az 8 karakter olmalı!';
+                    }
+                
+                    if (!values.ayndinlatma) {
+                    errors.ayndinlatma = ' * Metni onaylamanız gerekiyor!';
+                    }
+
+                    if (!values.kvkk) {
+                    errors.kvkk = ' * Metni onaylamanız gerekiyor!';
+                    }
+                    setValidationState(errors)
+                    return errors;
+                  }}
+                onSubmit={(values, { setSubmitting }) => {
+                    setTimeout(() => {
+                    alert(JSON.stringify(values, null, 2));
+                    console.log("tıklandı")
+                    setSubmitting(false);
+                    }, 400);
+                }}
+                >
+                {({ isSubmitting }) => (
+                    <Form>
                     <h1 className={styles.bundleFormTextHeader}>Müşteri Numaranız, TC Kimlik Numaranız veya  <br/>
                     GSM Numaranız ile giriş yapabilirsiniz.</h1>
                     <p className={styles.bundleFormText}>Işık hızında fiber internet şimdi ilk 6 ay sadece 99 TL !</p>
-                    <form onSubmit={loginUser} >
                     <div className={styles.bundleFormInput}>
-                        <label htmlFor="name">
+                        <label htmlFor="loginfo">
                             <p>Müşteri Numarası, TC Kimlik Numarası veya  GSM Numarası</p>
-                            <input id="name" type="text" className={inputValid === false ? 'border-none outline outline-2 outline-red-500' : ""} />
+                            { validationState.loginfo ? (
+                                <h6 className='error-state'> {validationState.loginfo} </h6>
+                            ) : ""}
+                            <Field type="name" name="loginfo" className={validationState.loginfo  ? 'border-none outline outline-2 outline-[#FF3838]' : ''} />
                         </label>
-                        <label htmlFor="phone">
+                        <label htmlFor="password">
                             <p>Şifreniz</p>
-                            <input id="phone" type="text" className={inputValid === false ? 'border-none outline outline-2 outline-red-500' : ""} />
+                            { validationState.password ? (
+                                <h6 className='error-state'> {validationState.password} </h6>
+                            ) : ""}
+                            <Field type="password" name="password" className={validationState.password  ? 'border-none outline outline-2 outline-[#FF3838]' : ''} />
                         </label>
                         <label htmlFor="ayndınlatma">
+                            { validationState.ayndinlatma ? (
+                                <h6 className='error-state'> {validationState.ayndinlatma} </h6>
+                            ) : ""}
                             <div className={styles.bundleFormInputCheckbox}>
-                            <input id="ayndınlatma" type="checkbox" />
-                            <a href='#'>Kişisel veri aydınlatma metnini okudum ve anladım.</a>
+                            <Field type="checkbox" name="ayndinlatma" />
+                            <Link to='/privacy' target={'_blank'}>Kişisel veri aydınlatma metnini okudum ve anladım.</Link>
                             </div>
                         </label>
                         <label htmlFor="ayndınlatma">
+                            { validationState.kvkk ? (
+                                <h6 className='error-state'> {validationState.kvkk} </h6>
+                            ) : ""}
                             <div className={styles.bundleFormInputCheckbox}>
-                            <input id="kvkk" type="checkbox" />
-                            <a href='#'>Kişisel verilerimin işlenmesine izin veriyorum.</a>
+                            <Field type="checkbox" name="kvkk" />
+                            <Link to='/kvkk' target={'_blank'}>Kişisel verilerimin işlenmesine izin veriyorum.</Link>
                             </div>
                         </label>
                         <div className={styles.bundleFormAydinlatmaMetni}>
@@ -63,10 +120,12 @@ const Login =() => {
                             </p>
                         </div>
                         <div className={styles.bundleFormButton}>
-                            <button type='submit' >Başvuru Yap</button>
+                            <button type="submit" disabled={isSubmitting} >Başvuru Yap</button>
                         </div>
                     </div>
-                    </form>
+                    </Form>
+                )}
+            </Formik>
             </div>
             <div className={styles.imgContent}>
                 <img src={taahhut}/>

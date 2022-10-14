@@ -77,7 +77,7 @@
     @apply
     mt-[30px] mb-10
 }
-.bundleFormButton > a {
+.bundleFormButton > button {
     @apply
     py-4 px-20
     bg-[#1559A6]
